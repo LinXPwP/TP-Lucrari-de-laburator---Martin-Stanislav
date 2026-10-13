@@ -78,10 +78,9 @@ def scan_sites():
         results.append(result)
         if result["status"] == 200:
             print(f"Site: {site}, Status: {result['status']}, Length: {result['length']} octeti")
-    # afisam reusitele si nereusitele in format: Reusite: x | Esuate: x
+    # afisam reusitele si nereusitele
     print(f"Reusite: {sum(1 for r in results if r['status'] == 200)} | Esuate: {sum(1 for r in results if r['status'] != 200)}")
 
-scan_sites()
 
 
 def check_headers(url):
@@ -98,7 +97,6 @@ def check_headers(url):
     missing = [header for header in SECURITY_HEADERS if header.lower() not in response_header_names]
     score = int(len(present) / len(SECURITY_HEADERS) * 100) if SECURITY_HEADERS else 0
     return {"present": present, "missing": missing, "score": score}
-
 
 def retry_check(url, attempts=3):
     """Încearcă de cel mult `attempts` ori; returnează un dicționar cu: status, attempts."""
