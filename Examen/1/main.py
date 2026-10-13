@@ -10,5 +10,5 @@ check_site("https://httpbin.org/json")
 # Partea 4: apelul scan_sites()
 scan_sites()
 # Partea 5: apeluri pentru check_headers
-check_headers("https://httpbin.org/response-headers?X-Frame-Options=DENY&X-Content-Type-Options=nosniff")
+print(check_headers("https://httpbin.org/response-headers?X-Frame-Options=DENY&X-Content-Type-Options=nosniff"))
 # Partea 6: apeluri pentru retry_check
