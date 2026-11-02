@@ -1,8 +1,8 @@
 # Laboratorul 6 – Informații invizibile: forensics și steganografie
 
 **Disciplina:** Tehnici de programare  
-**Student:** [Nume Prenume]  
-**Grupa:** [Grupa]
+**Student:** Martin Stanislav 
+**Grupa:** SI-262
 
 ## Scopul lucrării
 
